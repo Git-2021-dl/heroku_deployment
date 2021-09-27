@@ -31,5 +31,6 @@ def predict():
         out = 'Not Diabetic'
     return render_template('predict.html', pred = out)
 
-app.run(debug=True)
+if __name__ == '__main__':
+        app.run(debug=True)
 
